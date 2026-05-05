@@ -1,4 +1,4 @@
-<img align="right" width="40%" height="40%" src=".ekznw_quarto/style/img/corplogo120.png">
+<img align="right" width="25%" height="25%" src=".ekznw_quarto/style/img/corplogo120.png">
 
 # Quarto data development template
 
