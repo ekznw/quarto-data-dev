@@ -1,5 +1,6 @@
 <div style="display: flex; align-items: left; justify-content: space-between;">
   <h1>Quarto data development template</h1>
+  <br>
   <img src=".ekznw_quarto/style/img/corplogo120.png" alt="Corporate Logo" style="height: 120px;" />
 </div>
 <br>
