@@ -1,4 +1,6 @@
-<img align="right" width="25%" height="25%" src=".ekznw_quarto/style/img/corplogo120.png">
+<img align="right" width="20%" height="20%" src=".ekznw_quarto/style/img/corplogo120.png">  
+<br>    
+<br>
 
 # Quarto data development template
 
@@ -20,6 +22,11 @@ Use the template to fill out metadata and data development steps.
 
 > See the [Quarto website](https://quarto.org/) comprehensive document for technical details.
 > General markdown syntax is available [here](https://www.markdownguide.org/basic-syntax/), else use a visual markdown editor like [VSCodium](https://vscodium.com/) with [Quarto extension installed](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace), or [Positron](https://positron.posit.co/).
+
+### 2.1 Adding citations and a bibliography
+
+Compile your own reference database (BibTeX/BibLaTeX formatted) and make sure that the path in the Quarto YAML points to this directory. Use the `@` symbol + `citation key` to generate a citation. For a bracketed citation insert enclose in square brackets, e.g., [@jones2022ahr]. A bibliography will be printed at the end of the document.      
+> See the BSPI citation database [here](https://github.com/ekznw/refs). 
 
 ## 3. Render the Quarto document
 

@@ -55,42 +55,42 @@ bibliography: bspi.bib  # the source bib file can be downloaded from here:
                         # https://github.com/ekznw/refs
 ---
 
+```{=html}
 <!-- Quarto cheatsheet: https://rstudio.github.io/cheatsheets/quarto.pdf
 
 In the Quarto main document wherein the write-up can be meshed with code. You can insert markdown comments that are not rendered into html, word etc using a 'markdown' block — note the beginning and end 3 x ` characters. This sequence of special characters in Quarto tell the renderer that this is special section, particularly, a comment section.   
 See https://quarto.org/docs/authoring/callouts.html for more on callout blocks. There is a callout 'tip' box below. -->
+```
 
 ::: {.callout-tip title="NB!"}
 The contents of this report should enable replication or further development of the project and associated data products.
 :::
 
-
 # Revision history
 
 ::: {.callout-tip title="Tip"}
-Remove contents for this project report template info below; then, for your project, add rows for major revisions or comments. Follow *version convention*: pre-release = v0.1 – v0.9; release > v0.9. 
+Remove contents for this project report template info below; then, for your project, add rows for major revisions or comments. Follow *version convention*: pre-release = v0.1 – v0.9; release \> v0.9.
 :::
 
 ::: {#tbl-rev}
-
 | Date | Person(s) | Note | Version |
-|:---|:---|:-------|:--|
-|2026-02-09 | Paul Gordijn | Draft project workflow document for comment. | v0.2 |
-|2026-05-05 | Paul Gordijn | Updated style references and BibTeX. | v0.3 |
+|:--------------|:--------------|:--------------------------|:--------------|
+| 2026-02-09 | Paul Gordijn | Draft project workflow document for comment. | v0.2 |
+| 2026-05-05 | Paul Gordijn | Updated style references and BibTeX. | v0.3 |
 
 Project documentation revision history and version number.
-
 :::
 
-
 # Project summary
+
 ## Purpose
+
 ::: {.callout-tip title="What to write"}
 A note on the 'why' of the project.
 :::
 
-
 # Main steps
+
 ::: {.callout-tip title="What to write"}
 List the main steps of the project. Keep it to the point—elaborate under 'Data processing' below.
 :::
@@ -102,6 +102,7 @@ List the main steps of the project. Keep it to the point—elaborate under 'Data
 ## ...
 
 # Datasets used
+
 ::: {.callout-tip title="What to write"}
 Dataset citation(s) from BibTeX or other citation database.
 :::
@@ -111,12 +112,15 @@ Dataset citation(s) from BibTeX or other citation database.
 - @hawker2022a3m
 
 # Data processing
+
 ::: {.callout-tip title="What to write"}
 Detailed elaboration of the 'main steps'. Should enable full reproduction of the project.
 :::
 
 ## First step (e.g. data prep)
-We made up some data. 
+
+We made up some data.
+
 ```{r}
 df <- data.frame(
     a = 1:5,
@@ -125,11 +129,14 @@ df <- data.frame(
 )
 ```
 
-    a. Sub-item ...
-    a.
-    a.
+```         
+a. Sub-item ...
+a.
+a.
+```
 
 We checked out the data structure.
+
 ```{r}
 str(df)
 ```
@@ -137,54 +144,53 @@ str(df)
 ## Other main processing steps
 
 We estimated the mean of 'a'.
+
 ```{r}
 mean(df$a)
 ```
 
-Our options presented for data processing (_see_ @tbl-mytable below).
+Our options presented for data processing (*see* @tbl-mytable below).
 
 ::: {#tbl-mytable}
-
-| Options | Reasoning |
-| --- | --- |
-| Option one. | Go with 'a' as it has a mean of 3. |
-| Option two | Perhaps we should estimate variance. |
+| Options     | Reasoning                            |
+|-------------|--------------------------------------|
+| Option one. | Go with 'a' as it has a mean of 3.   |
+| Option two  | Perhaps we should estimate variance. |
 
 Options table.
-
 :::
 
 ## ...
 
-
 # Products
+
 ::: {.callout-tip title="What to write"}
 Notes on the final report and associated products.
 :::
 
-
 ## Conclusion
+
 ::: {.callout-tip title="What to write"}
 Concluding remarks.
 :::
 
-
-
 # Appendices
+
 ## Appendix A: metadata
+
 ::: {.callout-tip title="What to write"}
 More on this to come...
 :::
 
-
 ## Appendix B: supporting documentation
+
 ::: {.callout-tip title="What to write"}
-List supporting documentation if it needs to be highlighted. 
+List supporting documentation if it needs to be highlighted.
 :::
 
 ## Appendix C: Project folder structure
 
-```
+```         
 ├── 📁 data         | Data folder
 │   ├── 📁 arc      | Folder for archived data.
 │   ├── 📁 dev      | Folder for datasets in development & temp files.
@@ -201,8 +207,10 @@ List supporting documentation if it needs to be highlighted.
 ## Appendix D: Processing environment
 
 ### R environment
+
 ```{r}
 #| eval: true
 sessionInfo()
 ```
+
 # References (example references)
