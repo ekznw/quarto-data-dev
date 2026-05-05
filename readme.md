@@ -1,12 +1,14 @@
 <img align="right" width="20%" height="20%" src=".ekznw_quarto/style/img/corplogo120.png">  
-<br>    
 <br>
 
 # Quarto data development template
-
+<br>
+<br>
 This folder contains a template Quarto document for data development for Ezemvelo KZN Wildlife Scientific Services.
+<br>
 
 > Why Quarto?
+>
 > Quarto integrates data pipelines & documentation (word, pdf, scientific manuscripts, websites). It is a leading open science tool.
 
 # How to use
