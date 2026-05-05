@@ -28,6 +28,9 @@ Use the template to fill out metadata and data development steps.
 Compile your own reference database (BibTeX/BibLaTeX formatted) and make sure that the path in the Quarto YAML points to this directory. Use the `@` symbol + `citation key` to generate a citation. For a bracketed citation insert enclose in square brackets, e.g., [@jones2022ahr]. A bibliography will be printed at the end of the document.      
 > See the BSPI citation database [here](https://github.com/ekznw/refs). 
 
+If you prefer ― edit the Quarto document in visual mode like ...
+[](images/QuartoVisualEdit.mp4)
+
 ## 3. Render the Quarto document
 
 **Option 1**: Use the shortcut to render in VSCodium `CTRL+SHFT+K` or the 'Preview' button.
