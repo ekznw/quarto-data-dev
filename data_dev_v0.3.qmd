@@ -1,0 +1,208 @@
+---
+# YAML header ----
+# qmd yaml chunk (note the 3 x '-' at the begining and end of the chunk)
+# description: 
+#  Use the yaml to:
+#   - control document metadata-files: e.g., title, subtitle, description, abstract, date, bibliography.
+#   - set document formating: e.g. document output type (html, docx, pdf, pptx), table of contents (toc), html behavior.
+#       - For html see more here: https://quarto.org/docs/output-formats/html-basics.html
+#       - For html see more here: https://quarto.org/docs/output-formats/pdf-basics.html
+#       - For html see more here: https://quarto.org/docs/output-formats/ms-word.html
+#   - html style can be handled by external style file (e.g. data_dev.css).
+#   - If you want to force a line-break in the yaml use html '<br>'.
+#   - Tabs (or spaces) and important in the yml (and main text). Indentation signals a sub option (or section).
+# COMMENT = #
+
+## Document metadata ----
+title: "Scientific Services, BSPI Project report"
+subtitle: "Project title"
+author: "Name and Surname"
+date: last-modified
+date-format: "YYYY-MM-DD"
+abstract: "Use this file as a project documentation template. <br> Insert here a sentence or two describing the project. List the 'umbrella' project that this report falls under where relevant. <br> "
+
+## Document style ----
+### html style ----
+title-block-banner: true
+format: 
+    html:
+        embed-resources: true
+        smooth-scroll: true
+        theme:
+            - .ekznw_quarto/style/_ekznw_theme.scss
+        fontcolor: black
+        toc: true
+        toc-location: left
+        toc-title: Summary
+        toc-depth: 3
+        number-sections: true
+
+### pdf style and options ----
+    pdf:
+        toc: true     # appears as a PDF ToC page
+        number-sections: true
+
+### Word document stype and options ----
+    docx:
+        number-sections: true
+css: .ekznw_quarto/style/default_overrides.css
+
+# Select bibliography ----
+#  Cite with citation key like @cite_key or [@cite_key] for citations without,
+# or within parentheses, respectively.
+#  References will be printed in full at the end of the document.
+bibliography: bspi.bib  # the source bib file can be downloaded from here:
+                        # https://github.com/ekznw/refs
+---
+
+<!-- Quarto cheatsheet: https://rstudio.github.io/cheatsheets/quarto.pdf
+
+In the Quarto main document wherein the write-up can be meshed with code. You can insert markdown comments that are not rendered into html, word etc using a 'markdown' block — note the beginning and end 3 x ` characters. This sequence of special characters in Quarto tell the renderer that this is special section, particularly, a comment section.   
+See https://quarto.org/docs/authoring/callouts.html for more on callout blocks. There is a callout 'tip' box below. -->
+
+::: {.callout-tip title="NB!"}
+The contents of this report should enable replication or further development of the project and associated data products.
+:::
+
+
+# Revision history
+
+::: {.callout-tip title="Tip"}
+Remove contents for this project report template info below; then, for your project, add rows for major revisions or comments. Follow *version convention*: pre-release = v0.1 – v0.9; release > v0.9. 
+:::
+
+::: {#tbl-rev}
+
+| Date | Person(s) | Note | Version |
+|:---|:---|:-------|:--|
+|2026-02-09 | Paul Gordijn | Draft project workflow document for comment. | v0.2 |
+|2026-05-05 | Paul Gordijn | Updated style references and BibTeX. | v0.3 |
+
+Project documentation revision history and version number.
+
+:::
+
+
+# Project summary
+## Purpose
+::: {.callout-tip title="What to write"}
+A note on the 'why' of the project.
+:::
+
+
+# Main steps
+::: {.callout-tip title="What to write"}
+List the main steps of the project. Keep it to the point—elaborate under 'Data processing' below.
+:::
+
+## First step (e.g. data prep)
+
+## Other main processing steps
+
+## ...
+
+# Datasets used
+::: {.callout-tip title="What to write"}
+Dataset citation(s) from BibTeX or other citation database.
+:::
+
+- @nasajpl2021nmd
+- @ekw2015km3
+- @hawker2022a3m
+
+# Data processing
+::: {.callout-tip title="What to write"}
+Detailed elaboration of the 'main steps'. Should enable full reproduction of the project.
+:::
+
+## First step (e.g. data prep)
+We made up some data. 
+```{r}
+df <- data.frame(
+    a = 1:5,
+    b = rep(1, 5),
+    c = c("a", "b", "c", "d", "e")
+)
+```
+
+    a. Sub-item ...
+    a.
+    a.
+
+We checked out the data structure.
+```{r}
+str(df)
+```
+
+## Other main processing steps
+
+We estimated the mean of 'a'.
+```{r}
+mean(df$a)
+```
+
+Our options presented for data processing (_see_ @tbl-mytable below).
+
+::: {#tbl-mytable}
+
+| Options | Reasoning |
+| --- | --- |
+| Option one. | Go with 'a' as it has a mean of 3. |
+| Option two | Perhaps we should estimate variance. |
+
+Options table.
+
+:::
+
+## ...
+
+
+# Products
+::: {.callout-tip title="What to write"}
+Notes on the final report and associated products.
+:::
+
+
+## Conclusion
+::: {.callout-tip title="What to write"}
+Concluding remarks.
+:::
+
+
+
+# Appendices
+## Appendix A: metadata
+::: {.callout-tip title="What to write"}
+More on this to come...
+:::
+
+
+## Appendix B: supporting documentation
+::: {.callout-tip title="What to write"}
+List supporting documentation if it needs to be highlighted. 
+:::
+
+## Appendix C: Project folder structure
+
+```
+├── 📁 data         | Data folder
+│   ├── 📁 arc      | Folder for archived data.
+│   ├── 📁 dev      | Folder for datasets in development & temp files.
+│   └── 📁 src      | Externally sourced data.
+├── 📁 images       | Miscellaneous images.
+│   └── 🖼️ graph01.png | Misc figs etc
+├── 📁 .ekznw_quarto                  | Quarto document style
+│   ├── 🎨 _ekznw_theme.scss          | Html theme.
+│   ├── 🎨 default_overrides.css
+├── 🌐 data_dev.html | Rendered html output
+└── 📄 data_dev.qmd  | Raw Quarto document
+```
+
+## Appendix D: Processing environment
+
+### R environment
+```{r}
+#| eval: true
+sessionInfo()
+```
+# References (example references)
