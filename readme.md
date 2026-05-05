@@ -1,9 +1,6 @@
-<div style="display: flex; align-items: left; justify-content: space-between;">
-  <h1>Quarto data development template</h1>
-  <br>
-  <img src=".ekznw_quarto/style/img/corplogo120.png" alt="Corporate Logo" style="height: 120px;" />
-</div>
-<br>
+<img align="right" width="40%" height="40%" src=".ekznw_quarto/style/img/corplogo120.png">
+
+# Quarto data development template
 
 This folder contains a template Quarto document for data development for Ezemvelo KZN Wildlife Scientific Services.
 
