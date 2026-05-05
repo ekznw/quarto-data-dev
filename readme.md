@@ -29,7 +29,7 @@ Compile your own reference database (BibTeX/BibLaTeX formatted) and make sure th
 > See the BSPI citation database [here](https://github.com/ekznw/refs). 
 
 If you prefer ― edit the Quarto document in visual mode like ...
-[](images/QuartoVisualEdit.mp4)
+![](images/QuartoVisEdit.gif)
 
 ## 3. Render the Quarto document
 
