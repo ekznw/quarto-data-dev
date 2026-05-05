@@ -76,7 +76,7 @@ Remove contents for this project report template info below; then, for your proj
 | Date | Person(s) | Note | Version |
 |:----------------|:----------------|:---------------------|:----------------|
 | 2026-02-09 | Paul Gordijn | Draft project workflow document for comment. | v0.2 |
-| 2026-05-05 | Paul Gordijn | Updated style references and BibTeX. | v0.3 |
+| 2026-05-05 | Paul Gordijn | Updated style, references, and BibTeX. | v0.3 |
 
 Project documentation revision history and version number.
 :::
