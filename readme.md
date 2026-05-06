@@ -9,14 +9,14 @@ This folder contains a Quarto document template for data development.
 
 > Why Quarto?
 >
-> Quarto integrates data pipelines & documentation (word, pdf, scientific manuscripts, websites). It is a leading open-science tool.
+> Quarto integrates data pipelines & documentation (word, pdf, scientific manuscripts, websites). It is a leading data science tool.
 
 # How to use
 
 ## 1. Download the data development template
 **Option 1:** To download template directly from the GitHub website. Go [here](https://github.com/ekznw/quarto-data-dev) and click the green `<> code` button |> then click `Download ZIP`.       
 **Option 2**:
-Using git or gitbash ― `git clone https://github.com/username/repository.git`.
+Using git or gitbash ― `git clone https://github.com/ekznw/quarto-data-dev.git`.
 
 ## 2. Edit the quarto document
 
