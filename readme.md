@@ -4,12 +4,12 @@
 # Quarto data development template
 <br>
 <br>
-This folder contains a template Quarto document for data development for Ezemvelo KZN Wildlife Scientific Services.
-<br>
+This folder contains a Quarto document template for data development.
+<br>        
 
 > Why Quarto?
 >
-> Quarto integrates data pipelines & documentation (word, pdf, scientific manuscripts, websites). It is a leading open science tool.
+> Quarto integrates data pipelines & documentation (word, pdf, scientific manuscripts, websites). It is a leading open-science tool.
 
 # How to use
 
@@ -27,7 +27,7 @@ Use the template to fill out metadata and data development steps.
 
 ### 2.1 Adding citations and a bibliography
 
-Compile your own reference database (BibTeX/BibLaTeX formatted) and make sure that the path in the Quarto YAML points to this directory. Use the `@` symbol + `citation key` to generate a citation. For a bracketed citation insert enclose in square brackets, e.g., [@jones2022ahr]. A bibliography will be printed at the end of the document.      
+Compile your own reference database (BibTeX/BibLaTeX formatted) and make sure that the path in the Quarto YAML points to this directory. Use the `@` symbol + `citation key` to generate a citation. For a bracketed citation, enclose with square brackets, e.g., [@jones2022ahr]. After rendering the Quarto document, a bibliography will be printed at the document end.      
 > See the BSPI citation database [here](https://github.com/ekznw/refs). 
 
 If you prefer ― edit the Quarto document in visual mode like ...
